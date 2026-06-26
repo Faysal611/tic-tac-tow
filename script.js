@@ -155,6 +155,7 @@ for(let item of items) {
             
             if (firstResult === true) {
                 toggle = true;
+                result.style.opacity = "1";
                 result.textContent = "PLAYER 1 has won!";
                 setTimeout(() => {
                     result.style.opacity = "0";
@@ -175,6 +176,7 @@ for(let item of items) {
             
             if(secondResult === true) {
                 toggle = true;
+                result.style.opacity = "1";
                 result.textContent = "PLAYER 2 has won!";
                 setTimeout(()=> {
                     result.style.opacity = "0";
