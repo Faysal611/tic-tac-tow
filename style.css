@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(251, 216, 145);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 233, 189);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.item {
+    background-color: rgb(255, 174, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    font-family: "Atkinson Hyperlegible Next";
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.p1Score, .p2Score {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    padding: 10px 20px 10px 20px    ;
+    background-color: rgb(255, 255, 255);
+    font-family: "Roboto Mono";
+    font-size: 30px;
+}
+
+.p1Score {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.p2Score {
+    border-radius: 0px 0px 15px 15px;
+}
+
+.btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-size: 25px;
+    padding: 12px 23px 12px 23px;
+    font-family: "Roboto Mono";
+    background-color: rgb(255, 174, 24);
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: box-shadow 0.3s ease-out;
+}
+
+.btn:active {
+    background-color: black;
+    color: rgb(255, 174, 24);
+    
+}
+
+.btn:hover {
+    box-shadow: -5px 5px 0px black;
+}
+
+.result {
+    position: absolute;
+    font-size: 50px;
+    font-family: "Atkinson Hyperlegible Next";
+    font-weight: 600;
+    margin-left: 50px;
+}
